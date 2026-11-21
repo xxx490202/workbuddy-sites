@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WorkBuddy 作品集 · xyc design</title>
+<style>
+  :root{
+    --paper:#F4EFE6; --ink:#1C1A17; --muted:#6E675D; --line:#DDD4C6;
+    --accent:#B0472F; --card:#FBF8F2;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:"Songti SC","Noto Serif SC","Source Han Serif SC",Georgia,serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1100px;margin:0 auto;padding:72px 28px 48px}
+  header{border-bottom:1px solid var(--line);padding-bottom:28px;margin-bottom:36px}
+  .eyebrow{
+    font-family:"PingFang SC","Helvetica Neue",sans-serif;
+    font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);
+    margin-bottom:14px;
+  }
+  h1{font-size:clamp(34px,6vw,64px);line-height:1.05;margin:0 0 16px;font-weight:600;letter-spacing:-.02em}
+  .lede{font-size:clamp(15px,2vw,18px);line-height:1.75;color:var(--muted);max-width:720px;margin:0}
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  @media (max-width:720px){.grid{grid-template-columns:1fr}.wrap{padding-top:48px}}
+  .card{
+    display:flex;flex-direction:column;justify-content:space-between;min-height:240px;
+    padding:26px 26px 22px;background:var(--card);border:1px solid var(--line);
+    text-decoration:none;color:inherit;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;
+  }
+  .card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(40,30,18,.10);border-color:#C9BDA9}
+  .card .no{font-family:"PingFang SC",sans-serif;font-size:12px;letter-spacing:.16em;color:var(--accent)}
+  .card h2{font-size:26px;margin:14px 0 10px;font-weight:600;letter-spacing:-.01em}
+  .card p{margin:0;font-size:14px;line-height:1.7;color:var(--muted)}
+  .card .go{margin-top:22px;font-family:"PingFang SC",sans-serif;font-size:12px;letter-spacing:.08em;color:var(--accent)}
+  .card .go::after{content:" →"}
+  .data{grid-column:1/-1;min-height:0}
+  .data .no{color:#2F6B4F}
+  .data .go{color:#2F6B4F}
+  footer{margin-top:42px;padding-top:20px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;color:var(--muted);font-family:"PingFang SC",sans-serif;font-size:12px;letter-spacing:.04em}
+  a{color:inherit}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Selected Works · WorkBuddy</div>
+    <h1>WorkBuddy 作品集</h1>
+    <p class="lede">五个交互叙事与信息可视化项目：从海上瓷路、明代宫城，到数字哀悼、四季海报与像素小游戏。</p>
+  </header>
+
+  <main class="grid">
+    <a class="card" href="cilu/">
+      <div>
+        <div class="no">01 · 交互叙事</div>
+        <h2>瓷路档案局</h2>
+        <p>一支笔、一本账簿、一条走了三百年的水路。以档案与账册为线索，重走中国瓷器外销的海上航路。</p>
+      </div>
+      <div class="go">进入项目</div>
+    </a>
+
+    <a class="card" href="jinling/">
+      <div>
+        <div class="no">02 · 信息可视化</div>
+        <h2>金陵故宫梦</h2>
+        <p>南京明故宫的交互式信息可视化：以数字营造的方式，重建一座消失的宫城。</p>
+      </div>
+      <div class="go">进入项目</div>
+    </a>
+
+    <a class="card" href="aidao/">
+      <div>
+        <div class="no">03 · 研究汇报</div>
+        <h2>数字哀悼</h2>
+        <p>数字哀悼与舆论反转：基于社交平台数据的计算传播学研究与可视化汇报。</p>
+      </div>
+      <div class="go">进入项目</div>
+    </a>
+
+    <a class="card" href="sixu/">
+      <div>
+        <div class="no">04 · 平面设计</div>
+        <h2>四序</h2>
+        <p>执韧 · 向野 · 孤芜 · 澄寂。以四张季节海报构成的视觉叙事与版式实验。</p>
+      </div>
+      <div class="go">进入项目</div>
+    </a>
+
+    <a class="card" href="shici/">
+      <div>
+        <div class="no">05 · 像素游戏</div>
+        <h2>拾瓷记</h2>
+        <p>一款以瓷器为主题的像素闯关小游戏：在碎片与纹样之间，找回散落的器物。</p>
+      </div>
+      <div class="go">进入项目</div>
+    </a>
+
+    <a class="card data" href="https://github.com/xxx490202/calculation-communication-data" target="_blank" rel="noopener">
+      <div>
+        <div class="no">DATA · 研究数据</div>
+        <h2>计算传播学 · 期末研究数据</h2>
+        <p>「数字哀悼」项目使用的公开平台数据，按四位研究对象分组，包含视频、评论与创作者 CSV / XLSX。</p>
+      </div>
+      <div class="go">查看数据仓库</div>
+    </a>
+  </main>
+
+  <footer>
+    <span>xyc design · WorkBuddy 作品集</span>
+    <span>GitHub Pages</span>
+  </footer>
+</div>
+</body>
+</html>
